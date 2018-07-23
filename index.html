@@ -3,30 +3,93 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Oksana Shukh</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	 <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+	
 </head>
 <body>
 	<header>
-		<img src="" class="logo">
+	<div class="container">
+		<div class="sidebar">
+		 <ul class="social">
+		 	<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+		 	<li><a href=""><i class="fab fa-github"></i></a></li>
+		 	<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+		 	<li><a href=""><i class="fab fa-instagram"></i></a></li>
+		 </ul>
+		</div>
+		<!-- <img src="img/logo-left.jpg" class="logo-left"> -->
+<!-- 		<img src="img/logo-right.jpg" class="logo-red"> -->
 		<nav>
-			<ul>
+			<ul class="menu">
 				<li><a href="">About me</a></li>
-				<li><a href="">What I can do</a></li>
+				<li><a href="">Services</a></li>
 				<li><a href="">Contacts</a></li>
 			</ul>
 		</nav>
+		</div>
 	</header>
-	<section class="about">
+	<section class="skills">
 		<div class="container">
-			
+			<h2>Proficient with tools:</h2>
+				<hr class="underline">
+			 <div class="tools">
+			 	<img src="img/tool-1.png" alt="" id="tool-1">
+			 	<img src="img/tool-2.png" alt="" id="tool-2">
+			 	<img src="img/tool-3.png" alt="">
+			 	<img src="img/tool-4.png" alt="">
+			 	<img src="img/tool-5.png" alt="">
+			 	<img src="img/tool-6.png" alt="" id="tool-6">
+			 	<img src="img/tool-7.png" alt="" id="tool-7">
+			 	<img src="img/tool-8.png" alt="">
+			 	<img src="img/tool-9.png" alt="">
+			 	<img src="img/tool-10.png" alt="">
+			 	<img src="img/tool-11.png" alt="" id="tool-11">
+	      </div>
 		</div>
 	</section>
 	<section class="services">
 	    <div class="container">
-	    	
+	    	<h2></h2>
+	    	 <hr class="underline">
 	    </div>	
 	</section>
 	<footer>
-		
+		<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+    <div class="well" style="margin-top: 10%;">
+    <h3>Send me a message</h3>
+    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+    </form>
+    </div>
+</div>
+</div>
 	</footer>
+
+	<script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/validator.min.js"></script>
+<script type="text/javascript" src="js/form-scripts.js"></script>
 </body>
 </html>
